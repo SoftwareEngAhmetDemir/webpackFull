@@ -1,1 +1,4 @@
 # webpackFull
+
+
+npm run serve
