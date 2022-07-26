@@ -1,8 +1,10 @@
+@import './indext.css'; 
+
 button{
     background-color: blue;
 }
 
 .C{
-    color: blueviolet;
+    color: green;
     font-weight: 700;
 }
