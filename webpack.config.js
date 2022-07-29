@@ -5,7 +5,7 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-  entry: ['./src/index.js','./src/index.css'],
+  entry: ['./src/index.js','./src/index.css','./src/style.scss'],
 
   module: {
     rules: [
@@ -27,8 +27,7 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
           "css-loader",
           // Compiles Sass to CSS
