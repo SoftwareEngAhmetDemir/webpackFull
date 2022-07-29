@@ -1,0 +1,6 @@
+$body-color: rgba(255, 255, 0, 0.593);
+$color: black;
+body {
+  color: $color !important;
+  background-color: $body-color;
+}
