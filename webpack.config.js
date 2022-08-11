@@ -8,6 +8,7 @@ module.exports = {
   entry: ['./src/index.js','./src/index.css','./src/style.scss'],
 
   module: {
+   
     rules: [
       
        {
@@ -31,21 +32,18 @@ module.exports = {
           // Translates CSS into CommonJS
           "css-loader",
           // Compiles Sass to CSS
-          "sass-loader",
+          "sass-loader"
         ],
-      },
-    
-    
-    
+      }
     ]
   },
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'index.js',
-    clean: true,
+    clean: false,
+      asyncChunks: true,
   },
   devServer: {
-    
     port: 8008,
     watchFiles:['src/**/*'] // to detect changes on all files inside src directory
  },
