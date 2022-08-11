@@ -1,0 +1,43 @@
+.footer {
+
+
+    background: #f4f4f4;
+    overflow-x: hidden;
+
+    iframe {
+        width: 100%;
+    }
+
+    ul {
+        li {
+            height: 50px;
+            display: flex;
+            align-items: center;
+
+            .icon-c {
+
+                &:hover {
+                    color: $danger;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-down(lg) {
+    .footer {
+        ul {
+            margin-top: 20px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            
+            li {
+                align-items: flex-start;
+                height: auto;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

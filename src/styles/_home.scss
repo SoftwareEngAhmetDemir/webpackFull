@@ -1,0 +1,14 @@
+.home {
+    text-align: right;
+}
+
+@include media-breakpoint-down(lg) {
+    .home {
+        text-align: left;
+
+        .dscr {
+            text-align: center;
+        }
+    }
+
+}

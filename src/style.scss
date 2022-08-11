@@ -1,6 +1,39 @@
-$body-color: rgba(255, 255, 0, 0.593);
-$color: black;
-body {
-  color: $color !important;
-  background-color: $body-color;
+@import './libs/bootstrap/scss/bootstrap.scss';
+// @import './libs/bootstrap/dist/js/bootstrap.min.js';
+@import './styles/_iconsfonts';
+@import './styles/_swiper';
+@import './styles/banner';
+@import './styles/live-bar';
+@import './styles/footer';
+@import './styles/tabs.scss';
+@import './styles/fonts';
+@import './styles/home';
+@import './styles/map';
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ffff;
+
+    &:hover {
+        color: red;
+    }
+}
+.desclive{
+    display: flex;
+    justify-content: center;
+}
+@include media-breakpoint-down(lg) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
+    }
+    .desclive{
+       display: block;
+       text-align: center;
+    }
 }

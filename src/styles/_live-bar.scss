@@ -1,0 +1,16 @@
+.live-bar{
+    color: transparent;
+    -webkit-text-stroke: 0.7px #fff;
+    background-color: $gray-800;
+    height: 125px;
+    font-weight: 900;
+    font-family: 'Arquitecta-Heavy';
+    word-spacing: 120px;
+}
+
+@include media-breakpoint-down(lg) {
+    .live-bar{
+    word-spacing: 10px;
+    text-align: center;
+    }
+}

@@ -1,0 +1,54 @@
+.map {
+    position: static;
+    background: #f4f4f4;
+    height: auto;
+    position: relative;
+
+    .img {
+
+        img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: flex-end;
+            width: 58.33%;
+
+            height: 100%;
+        }
+    }
+
+}
+
+
+@include media-breakpoint-down(lg) {
+
+    .map {
+        height: auto;
+
+        .img {
+            position: static;
+            background-color: red;
+            width: calc(100% + $container-padding-x);
+            margin-right: 4* $container-padding-x;
+
+            img {
+                position: relative;
+                width: 100%;
+                display: block;
+                width: calc(100% + 2*$container-padding-x - ($grid-gutter-width/2));
+                margin-left: -$container-padding-x;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .map {
+        .left-side {
+            text-align: center;
+        }
+    }
+}
